@@ -5,11 +5,3 @@ Citizen.CreateThread(function()
 		Wait(1000) --The idle camera activates after 30 second so we don't need to call this per frame
 	end
 end)
-
-Citizen.CreateThread(function()
-	while true do
-		InvalidateIdleCam()
-		InvalidateVehicleIdleCam()
-		Wait(100000000) --The idle camera activates after 30 second so we don't need to call this per frame
-	end
-end)
